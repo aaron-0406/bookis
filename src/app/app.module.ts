@@ -3,20 +3,31 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CreateBookComponent } from './Book/create-book/create-book.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { Routes } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+//Book
+import { CreateBookComponent } from './Components/Book/create-book/create-book.component';
 import { EditBookComponent } from './Components/Book/edit-book/edit-book.component';
 import { ListBookComponent } from './Components/Book/list-book/list-book.component';
+
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateBookComponent,
     EditBookComponent,
-    ListBookComponent
+    ListBookComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
