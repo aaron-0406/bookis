@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 //Book
 import { CreateBookComponent } from './Components/Book/create-book/create-book.component';
@@ -28,6 +30,8 @@ import { ListBookComponent } from './Components/Book/list-book/list-book.compone
     AppRoutingModule,
     BrowserAnimationsModule,
     MatGridListModule,
+    MatCardModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
