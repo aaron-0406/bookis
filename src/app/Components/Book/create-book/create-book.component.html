@@ -1,1 +1,63 @@
 <p>create-book works!</p>
+<div class="container">
+    <mat-toolbar>
+        <span>Agregar Libro</span>
+    </mat-toolbar>
+
+    <mat-card style="margin-top: 10px;">
+        <form [formGroup]="form" (ngSubmit)="agregarLibro()">
+            <mat-grid-list cols="3" rowHeight="70px">
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-form-field class="ancho">
+                        <mat-label>TÍTULO</mat-label>
+                        <input matInput autocomplete="off" formControlName="titulo">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-form-field class="ancho">
+                        <mat-label>AUTOR</mat-label>
+                        <input matInput autocomplete="off" formControlName="autor">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-form-field class="ancho">
+                        <mat-label>IMG</mat-label>
+                        <input matInput formControlName="img">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-form-field class="ancho">
+                        <mat-label>GÉNERO</mat-label>
+                        <mat-select formControlName="genero">
+                            <mat-option *ngFor="let item of genero" [value]="item">
+                                {{item}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-form-field class="ancho">
+                        <mat-label>EDITORIAL</mat-label>
+                        <input matInput autocomplete="off" formControlName="editorial">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-form-field class="ancho">
+                        <mat-label>PRECIO</mat-label>
+                        <input matInput autocomplete="off" formControlName="precio">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="2" [rowspan]="1">
+                    <mat-form-field class="anchura">
+                        <mat-label>SINOPSIS</mat-label>
+                        <input matInput autocomplete="off" formControlName="sinopsis">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <button mat-raised-button style="margin-right: 20px;">VOLVER</button>
+                    <button type="submit" [disabled]="form.invalid" mat-raised-button color="primary">ACEPTAR</button>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </form>
+    </mat-card>
+</div>
