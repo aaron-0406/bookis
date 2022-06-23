@@ -1,78 +1,13 @@
-<main>
-  <section class="grid-1">
-    <div></div>
-  </section>
-</main>
-
 <mat-grid-list cols="4" rowHeight="250px">
-  <mat-grid-tile>
+  <mat-grid-tile *ngFor="let book of listBooks; index as i">
     <mat-card>
-      <img class="imagen2" mat-card-md-image src="assets/images/insomnio.jpg" />
+      <img class="imagen2" mat-card-md-image src="{{ listBooks[i].imagen }}" />
       <div class="container">
-        <h1 class="titulo-libro" matTooltip="jola">Insomnio</h1>
+        <h1 class="titulo-libro">{{ listBooks[i].titulo }}</h1>
         <p>
-          Esta es una breve descripcion acerca del libro bla bla bla bla bla bla
-          bla bla bla bla bla bla bla bla
+          {{ listBooks[i].sinopsis }}
         </p>
       </div>
     </mat-card>
   </mat-grid-tile>
-
-  <mat-grid-tile>
-    <mat-card>
-      <img class="imagen2" mat-card-md-image src="assets/images/insomnio.jpg" />
-      <div class="container">
-        <h1 class="titulo-libro" matTooltip="jola">Insomnio</h1>
-        <p>
-          Esta es una breve descripcion acerca del libro bla bla bla bla bla bla
-          bla bla bla bla bla bla bla bla
-        </p>
-      </div>
-    </mat-card>
-  </mat-grid-tile>
-
-  <mat-grid-tile
-    ><mat-card>
-      <img class="imagen2" mat-card-md-image src="assets/images/insomnio.jpg" />
-      <div class="container">
-        <h1 class="titulo-libro" matTooltip="jola">Insomnio</h1>
-        <p>
-          Esta es una breve descripcion acerca del libro bla bla bla bla bla bla
-          bla bla bla bla bla bla bla bla
-        </p>
-      </div>
-    </mat-card></mat-grid-tile
-  >
-
-  <mat-grid-tile
-    ><mat-card>
-      <img class="imagen2" mat-card-md-image src="assets/images/insomnio.jpg" />
-      <div class="container">
-        <h1 class="titulo-libro" matTooltip="jola">Insomnio</h1>
-        <p>
-          Esta es una breve descripcion acerca del libro bla bla bla bla bla bla
-          bla bla bla bla bla bla bla bla
-        </p>
-      </div>
-    </mat-card></mat-grid-tile
-  >
-  <mat-grid-tile
-    ><mat-card>
-      <img class="imagen2" mat-card-md-image src="assets/images/insomnio.jpg" />
-      <div class="container">
-        <h1 class="titulo-libro" matTooltip="jola">Insomnio</h1>
-        <p>
-          Esta es una breve descripcion acerca del libro bla bla bla bla bla bla
-          bla bla bla bla bla bla bla bla
-        </p>
-      </div>
-    </mat-card></mat-grid-tile
-  >
-  <mat-grid-tile>6</mat-grid-tile>
-  <mat-grid-tile>7</mat-grid-tile>
-  <mat-grid-tile>8</mat-grid-tile>
-  <mat-grid-tile>9</mat-grid-tile>
-  <mat-grid-tile>10</mat-grid-tile>
-  <mat-grid-tile>11</mat-grid-tile>
-  <mat-grid-tile>12</mat-grid-tile>
 </mat-grid-list>
