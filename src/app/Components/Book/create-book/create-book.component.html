@@ -1,4 +1,3 @@
-<p>create-book works!</p>
 <div class="container">
     <mat-toolbar>
         <span>Agregar Libro</span>
@@ -54,8 +53,8 @@
                     </mat-form-field>
                 </mat-grid-tile>
                 <mat-grid-tile [colspan]="1" [rowspan]="1">
-                    <button mat-raised-button style="margin-right: 20px;">VOLVER</button>
-                    <button type="submit" [disabled]="form.invalid" mat-raised-button color="primary">ACEPTAR</button>
+                    <button [routerLink]="['/bookList']" mat-raised-button style="margin-right: 20px;">VOLVER</button>
+                    <button type="submit" [disabled]="form.invalid" mat-raised-button class="btn_aceptar">ACEPTAR</button>
                 </mat-grid-tile>
             </mat-grid-list>
         </form>

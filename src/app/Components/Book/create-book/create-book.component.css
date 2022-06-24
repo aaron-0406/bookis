@@ -5,3 +5,9 @@
 .anchura {
     width: 90%;
 }
+mat-toolbar{
+  background-color: rgb(219, 230, 249);
+}
+.btn_aceptar{
+  background-color: rgb(219, 230, 249);
+}

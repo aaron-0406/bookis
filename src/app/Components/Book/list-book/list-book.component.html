@@ -8,20 +8,8 @@
   </button>
   <span>LIBRERÍA VIRTUAL</span>
   <span class="example-spacer"></span>
-  <button
-    mat-icon-button
-    class="example-icon favorite-icon"
-    aria-label="Example icon-button with heart icon"
-  >
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button
-    mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with share icon"
-  >
-    <mat-icon>share</mat-icon>
-  </button>
+  <button [routerLink]="['/newBook']" class="btn-agregar" color="black" mat-button>Agregar libro</button>
+
 </mat-toolbar>
 
 <mat-grid-list cols="4" rowHeight="250px">

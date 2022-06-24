@@ -13,7 +13,7 @@ mat-card {
   flex-direction: row;
   background: rgb(219, 230, 249);
   margin: 0;
-  border: black solid 1px;
+  border: rgb(79, 101, 137) solid 1px;
 }
 .container {
   width: 60%;
@@ -30,4 +30,10 @@ mat-card {
 }
 mat-toolbar{
   background-color: rgb(219, 230, 249);
+}
+.btn-agregar{
+  border: 2px solid rgba(104, 125, 159, 0.486);
+
+  position: absolute;
+  left: 90%;
 }
