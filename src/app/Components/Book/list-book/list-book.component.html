@@ -1,3 +1,29 @@
+<mat-toolbar>
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>LIBRERÍA VIRTUAL</span>
+  <span class="example-spacer"></span>
+  <button
+    mat-icon-button
+    class="example-icon favorite-icon"
+    aria-label="Example icon-button with heart icon"
+  >
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with share icon"
+  >
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
+
 <mat-grid-list cols="4" rowHeight="250px">
   <mat-grid-tile *ngFor="let book of listBooks; index as i">
     <mat-card>
@@ -7,6 +33,12 @@
         <p>
           {{ listBooks[i].sinopsis }}
         </p>
+        <button mat-icon-button>
+          <mat-icon style="color: rgb(55, 55, 143)" >editar</mat-icon>
+        </button>
+        <button mat-icon-button >
+          <mat-icon style="color: rgb(188, 30, 30)">delete</mat-icon>
+        </button>
       </div>
     </mat-card>
   </mat-grid-tile>

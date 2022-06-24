@@ -14,7 +14,7 @@ export class CreateBookComponent implements OnInit {
   genero: any[] = ['Thriller/Suspense', 'Romance', 'Horror', 'Ciencia Ficción/Fantasía', 'Crimen y Misterio', 'Comedia']
   form: FormGroup;
 
-  constructor(private fb: FormBuilder, 
+  constructor(private fb: FormBuilder,
               private  _bookService: BookService,
               private router: Router) {
     this.form = this.fb.group({
@@ -47,7 +47,7 @@ export class CreateBookComponent implements OnInit {
     this.router.navigate(['/booksList'])
 
     console.log(book);
-    
+
   }
 
 

@@ -1,6 +1,4 @@
-mat-grid-tile {
-  /* margin: 10; */
-}
+
 mat-grid-list {
   margin: 20px;
 }
@@ -29,4 +27,7 @@ mat-card {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+mat-toolbar{
+  background-color: rgb(219, 230, 249);
 }

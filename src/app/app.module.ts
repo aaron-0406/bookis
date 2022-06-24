@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
 
 //Book
 import { CreateBookComponent } from './Components/Book/create-book/create-book.component';
@@ -42,7 +43,7 @@ import { ListBookComponent } from './Components/Book/list-book/list-book.compone
     MatSelectModule,
     MatButtonModule,
     ReactiveFormsModule,
-
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
