@@ -41,4 +41,10 @@ export class BookService {
   getBooks() {
     return this.listBooks.slice();
   }
+
+  agregarLibro(book: Books){
+    this.listBooks.unshift(book);
+
+  }
+
 }
