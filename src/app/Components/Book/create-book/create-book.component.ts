@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { BookService } from 'src/app/Services/book.service';
 import { Books} from '../list-book/list-book.component';
 
@@ -13,7 +14,9 @@ export class CreateBookComponent implements OnInit {
   genero: any[] = ['Thriller/Suspense', 'Romance', 'Horror', 'Ciencia Ficción/Fantasía', 'Crimen y Misterio', 'Comedia']
   form: FormGroup;
 
-  constructor(private fb: FormBuilder, private  _bookService: BookService) {
+  constructor(private fb: FormBuilder, 
+              private  _bookService: BookService,
+              private router: Router) {
     this.form = this.fb.group({
       titulo: ['', Validators.required],
       autor: ['', Validators.required],
@@ -41,6 +44,8 @@ export class CreateBookComponent implements OnInit {
     }
 
     this._bookService.agregarLibro(book);
+    this.router.navigate(['/booksList'])
+
     console.log(book);
     
   }
