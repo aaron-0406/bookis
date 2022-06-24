@@ -40,4 +40,11 @@ export class ListBookComponent implements OnInit {
   cargarBooks() {
     this.listBooks = this._bookService.getBooks();
   }
+
+  eliminarBooks(i:number) {
+    console.log(i);
+
+  this._bookService.eliminarBooks(i);
+  this.cargarBooks();
+  }
 }

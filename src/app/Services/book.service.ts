@@ -55,4 +55,8 @@ export class BookService {
     this.listBooks.unshift(book);
   }
 
+  eliminarBooks(i:number) {
+    this.listBooks.splice(i, 1);
+  }
+
 }
