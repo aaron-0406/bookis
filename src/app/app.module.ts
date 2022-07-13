@@ -19,6 +19,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { CreateBookComponent } from './Components/Book/create-book/create-book.component';
 import { EditBookComponent } from './Components/Book/edit-book/edit-book.component';
 import { ListBookComponent } from './Components/Book/list-book/list-book.component';
+import { PaymentFormComponent } from './Components/Payment/payment-form/payment-form.component';
 
 
 
@@ -30,6 +31,7 @@ import { ListBookComponent } from './Components/Book/list-book/list-book.compone
     CreateBookComponent,
     EditBookComponent,
     ListBookComponent,
+    PaymentFormComponent,
   ],
   imports: [
     BrowserModule,

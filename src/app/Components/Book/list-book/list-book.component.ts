@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { BookService } from 'src/app/Services/book.service';
 
 export interface Books {
+  id:string;
   titulo: string;
   autor: string;
   genero: string;
@@ -19,6 +20,7 @@ export interface Books {
 export class ListBookComponent implements OnInit {
   listBooks: Books[] = [
     {
+      id:'1',
       titulo: 'Insomnio',
       autor: 'autor1',
       genero: 'dramatico',
