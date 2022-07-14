@@ -1,1 +1,55 @@
-<p>details-book works!</p>
+<mat-toolbar>
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <img
+      class="logo"
+      src="../../../../assets/images/logo-removebg-preview.png"
+      alt=""
+    />
+  </button>
+  <span>LIBRERÍA VIRTUAL BOOKIS</span>
+  <span class="example-spacer"></span>
+</mat-toolbar>
+
+<div class="detalle-libros">Detalle de libros</div>
+
+<div *ngIf="listBooks.length > 0">
+  <mat-grid-list cols="1" rowHeight="300px">
+    <mat-grid-tile *ngFor="let book of listBooks; index as i">
+      <mat-card>
+        <img
+          class="imagen2"
+          mat-card-md-image
+          src="{{ listBooks[i].imagen }}"
+        />
+        <div class="container">
+          <h1 class="titulo-libro">
+            {{ listBooks[i].titulo }}
+          </h1>
+          <p><span>Autor: </span>{{ listBooks[i].autor }}</p>
+          <p><span>Género: </span>{{ listBooks[i].genero }}</p>
+          <p><span>Editorial: </span>{{ listBooks[i].editorial }}</p>
+          <p><span>Sinopsis: </span>{{ listBooks[i].sinopsis }}</p>
+          <p class="price">
+            {{ "S/." + listBooks[i].precio }}
+          </p>
+          <div class="botones">
+            <button
+              [routerLink]="['/pago']"
+              class="btn-comprar"
+              color="black"
+              mat-button
+            >
+              Comprar
+            </button>
+          </div>
+        </div>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+<footer></footer>
