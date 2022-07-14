@@ -20,6 +20,7 @@ import { CreateBookComponent } from './Components/Book/create-book/create-book.c
 import { EditBookComponent } from './Components/Book/edit-book/edit-book.component';
 import { ListBookComponent } from './Components/Book/list-book/list-book.component';
 import { PaymentFormComponent } from './Components/Payment/payment-form/payment-form.component';
+import { DetailsBookComponent } from './Components/Book/details-book/details-book.component';
 
 
 
@@ -32,6 +33,7 @@ import { PaymentFormComponent } from './Components/Payment/payment-form/payment-
     EditBookComponent,
     ListBookComponent,
     PaymentFormComponent,
+    DetailsBookComponent,
   ],
   imports: [
     BrowserModule,
