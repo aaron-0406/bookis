@@ -11,9 +11,10 @@ export class PaymentFormComponent implements OnInit {
     render({
       id: '#myPaypalButtons',
       currency: 'PE',
-      value: '100.00',
+      value: '59.00',
       onApprove: (details) => {
         alert('Transaction Successfull');
+        //TODO: go back
       },
     });
   }
