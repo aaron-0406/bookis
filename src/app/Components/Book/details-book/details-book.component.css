@@ -3,11 +3,11 @@ mat-toolbar {
   background-color: rgb(219, 230, 249);
 }
 /*LOGO DEL NAVBAR*/
-.logo{
+.logo {
   width: 40px;
 }
 
-.detalle-libros{
+.detalle-libros {
   text-align: center;
   font-size: 28px;
   margin: 20px 0;
@@ -28,7 +28,6 @@ mat-card {
   background: rgb(219, 230, 249);
   border: rgb(79, 101, 137) solid 1px;
   margin: 50px 5px;
-  justify-content: start;
 }
 /*IMAGEN DEL LIBRO*/
 .imagen2 {
@@ -51,38 +50,37 @@ mat-card {
   overflow: hidden;
 }
 /*PARRAFOS(TITULO, AUTOR, GENERO, EDITORIAL, SINOPSIS, PRECIO)*/
-p{
+p {
   font-size: 15px;
   text-align: start;
 }
 /*PARRAFOS PERO SPAN (TITULO, AUTOR, GENERO, EDITORIAL, SINOPSIS, PRECIO)*/
-span{
-  font-family: 'Maven Pro', sans-serif;
+span {
+  font-family: "Maven Pro", sans-serif;
   font-style: oblique;
   font-weight: bold;
 }
 
-
 /*PRECIO DEL LIBRO*/
-.price{
+.price {
   font-size: 16px;
-  font-weight:600;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
 /*BOTONES*/
-.botones{
+.botones {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.btn-comprar{
+.btn-comprar {
   background-color: rgba(57, 70, 90, 0.486);
   margin-right: 25px;
 }
 
 /*FOOTER*/
-footer{
+footer {
   height: 30px;
   background-color: black;
 }
