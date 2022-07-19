@@ -7,7 +7,9 @@ import { render } from 'creditcardpayments/creditCardPayments';
   styleUrls: ['./payment-form.component.css'],
 })
 export class PaymentFormComponent implements OnInit {
-  constructor() {
+  constructor() {}
+
+  ngOnInit(): void {
     render({
       id: '#myPaypalButtons',
       currency: 'PE',
@@ -18,6 +20,4 @@ export class PaymentFormComponent implements OnInit {
       },
     });
   }
-
-  ngOnInit(): void {}
 }
